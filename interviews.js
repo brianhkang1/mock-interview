@@ -42,5 +42,12 @@ function frequency(input){
 
 // 4. given an index N find the value at the index N in the fibonacci sequence recursively
 // fibonacci sequence 1,1,2,3,5,8,13,21
-// indices:           1,2,3,4,5,6,7, 8
+// indices:           0,1,2,3,4,5,6, 7
 // if N = 6 output 8
+function fibIndex(index){
+  if (index < 2){
+    return 1
+  } else {
+    return fibIndex(index-1) + fibIndex(index-2)
+  }
+}
